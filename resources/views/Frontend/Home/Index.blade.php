@@ -5,11 +5,7 @@
     <div class="container">
         <h2>Layanan Pengaduan Online Masyarakat</h2>
         <p>Sampaikan laporan Anda langsung kepada kami</p>
-        <div class="row mt-4">
-            <div class="col-12 col-lg-8 m-auto">
-
-            </div>
-        </div>
+        
        <div class="row">
         <div class="col-md-8 m-auto">
             <form action="" class="complaint-form">
@@ -88,6 +84,68 @@
  
             </form>
         </div>
+
+
+        <div class="col-sm-12">
+            <div class="row bs-wizard" style="border-bottom:0;">
+                <div class="col-xs-2 col-xs-offset-1 bs-wizard-step active">
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <span class="bs-wizard-dot">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </span>
+                  <div class="text-center bs-wizard-stepnum">Tulis Laporan</div>
+                  <div class="bs-wizard-info text-center">
+                      Laporkan keluhan atau aspirasi anda dengan jelas dan lengkap
+                  </div>
+                </div>
+
+                <div class="col-xs-2 bs-wizard-step">
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <span class="bs-wizard-dot">
+                    <i class="fa-solid fa-share"></i>
+                  </span>
+                  <div class="text-center bs-wizard-stepnum">Proses Verifikasi</div>
+                  <div class="bs-wizard-info text-center">
+                      Dalam 3 hari, laporan Anda akan diverifikasi dan diteruskan kepada instansi berwenang
+                  </div>
+                </div>
+
+                <div class="col-xs-2 bs-wizard-step">
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <span class="bs-wizard-dot">
+                    <i class="fa-solid fa-comments"></i>
+                  </span>
+                  <div class="text-center bs-wizard-stepnum">Proses Tindak Lanjut</div>
+                  <div class="bs-wizard-info text-center">
+                      Dalam 5 hari, instansi akan menindaklanjuti dan membalas laporan Anda
+                  </div>
+                </div>
+
+                <div class="col-xs-2 bs-wizard-step">
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <span class="bs-wizard-dot">
+                    <i class="fa-solid fa-comment-dots"></i>
+                  </span>
+                  <div class="text-center bs-wizard-stepnum">Beri Tanggapan</div>
+                  <div class="bs-wizard-info text-center">
+                      Anda dapat menanggapi kembali balasan yang diberikan oleh instansi dalam waktu 10 hari
+                  </div>
+                </div>
+
+                <div class="col-xs-2 bs-wizard-step">
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <span class="bs-wizard-dot">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <div class="text-center bs-wizard-stepnum">Selesai</div>
+                  <div class="bs-wizard-info text-center">
+                      Laporan Anda akan terus ditindaklanjuti hingga terselesaikan
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
        </div>
 
        
@@ -113,10 +171,4 @@
 
 @push('Modal')
 @include('Template.ModalLogin')
-@endpush
-
-@push('Javascript')
-<script type="text/javascript">
-
-</script>
 @endpush

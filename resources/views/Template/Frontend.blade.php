@@ -16,13 +16,13 @@
         <div class="container">
             <div class="logo float-start">
                 {{-- <a href="index.html"><img src="{{ asset('image/logo-white.png') }}" alt="" class="img-fluid"></a> --}}
-                <h1><a href="index.html"><span>報告.ID </span></a></h1>
+                <h1><a href="{{ url('/') }}"><span>LAPORKAN.ID </span></a></h1>
             </div>
 
             <nav class="nav-menu float-end d-none d-lg-block">
                 <ul>
                     <li><a href="#ModalLogin" data-bs-toggle="modal"> Masuk</a></li>
-                    <li><a href="#" class="btn btn-outline-warning btn-block">Daftar</a></li>
+                    <li><a href="{{ url('account/register') }}" class="btn btn-outline-warning btn-block">Daftar</a></li>
                 </ul>
             </nav>
 
@@ -83,7 +83,7 @@
         </div>
     </footer>
     @stack('Modal')
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/function.js') }}"></script>
     @stack('Javascript')

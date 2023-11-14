@@ -15,4 +15,13 @@ class HomeController extends Controller
 
         return view('Frontend/Home/Index',$array);
     }
+
+    public function register()
+    {
+        $array = array(
+            'title' => 'Daftar',
+        );
+
+        return view('Frontend/Home/Register',$array);
+    }
 }
